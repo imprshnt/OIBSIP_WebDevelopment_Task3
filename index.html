@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Climeé - Unique temperature converter</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@600&family=Montserrat:wght@400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="tempshift-container">
+    <section class="converter-card">
+      <h1 class="title">Climeé</h1>
+      <p class="subtitle">Convert temperatures like never before 🌡️</p>
+
+      <div class="input-group">
+        <input
+          type="text"
+          id="tempInput"
+          placeholder="Enter temperature"
+          aria-label="Temperature input"
+          autocomplete="off"
+        />
+      </div>
+
+      <p class="section-label">Entered value is in...</p>
+      <div class="unit-select" id="unitSelect">
+        <label class="unit-option selected" data-unit="celsius">
+          <input type="radio" name="unit" value="celsius" checked />
+          Celsius
+        </label>
+        <label class="unit-option" data-unit="fahrenheit">
+          <input type="radio" name="unit" value="fahrenheit" />
+          Fahrenheit
+        </label>
+      </div>
+
+      <div class="buttons">
+        <button id="convertBtn">Convert</button>
+        <button id="resetBtn" class="reset-btn">Reset</button>
+      </div>
+
+      <div class="result-container" aria-live="polite">
+        <svg
+          id="tempIcon"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#FF6F61"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="temp-icon"
+        >
+          <path d="M14 14.76V3a2 2 0 1 0-4 0v11.76a4 4 0 1 0 4 0z"></path>
+        </svg>
+        <p id="result" class="result-text"></p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
