@@ -1,4 +1,4 @@
-Project Name: Thermè — A Classy Temperature Converter
+Project Name: Climeè — A Classy Temperature Converter
 
 What’s the goal?
 To create a temperature converter that’s not just useful, but also looks elegant and unique — inspired by classic, timeless design. It lets users convert between Celsius and Fahrenheit easily, while feeling polished and different from usual apps.
